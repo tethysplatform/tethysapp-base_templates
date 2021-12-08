@@ -11,7 +11,7 @@ class BaseTemplates(TethysAppBase):
     icon = 'base_templates/images/icon.gif'
     package = 'base_templates'
     root_url = 'base-templates'
-    color = '#16a085'
+    color = '#5C164E'
     description = ''
     tags = ''
     enable_feedback = False
