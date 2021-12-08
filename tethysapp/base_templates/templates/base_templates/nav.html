@@ -1,0 +1,11 @@
+<li class="nav-item title">Templates</li>
+<li class="nav-item"><a class="nav-link{% if not request.GET.base_template %} active{% endif %}" href="{% url 'base_templates:home' %}">Base</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'content_only' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=content_only">Content Only</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'header_content' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=header_content">Header and Content</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'no_nav' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=no_nav">No Navigation</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'no_actions' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=no_actions">No Actions Bar</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'left_actions' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=left_actions">Left Actions Bar</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'right_actions' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=right_actions">Right Actions Bar</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'two_columns' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=two_columns">Two Columns Layout</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'three_columns' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=three_columns">Three Column Layout</a></li>
+<li class="nav-item"><a class="nav-link{% if request.GET.base_template == 'quad_split' %} active{% endif %}" href="{% url 'base_templates:home' %}?base_template=quad_split">Quad Split Layout</a></li>
